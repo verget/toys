@@ -109,8 +109,6 @@ class Ads extends Prototype {
         ] );
         $this->load->view( 'templates/footer' );
     }
-
-
     public function get_type($category_id){
        $array = $this->ads_model->getAvailTypes( 0, 'Любой', (int)$category_id );
        $a = array();
@@ -120,7 +118,9 @@ class Ads extends Prototype {
            }
        }      
        echo json_encode($a);
-       
+    }
+    public function add_to_cart($item_id){
+        
     }
 }
 

@@ -7,7 +7,7 @@
 }
 
 .very_big_div {
-    min-height: 250px;
+    min-height: 500px;
 }
 
 .big_div {
@@ -17,11 +17,9 @@
     padding-top: 50px;
 }
 
-
 .visuallyhidden {
     opacity: 0;
 }
-
 .anketa input, textarea, select {
     border: 1px solid darkgray;
     margin: 0;
@@ -142,7 +140,6 @@ th {
     padding-bottom: 5px;
 }
 
-
 .gray_form {
 	background: #eeeeee;
 	border: 1px solid #ddd;
@@ -171,6 +168,10 @@ iframe {
     padding: 5px;
     max-width: 325px;
     height: 240px;
+}
+.info {
+	position: absolute;
+	font-weight: bold;
 }
 
 .params td {
