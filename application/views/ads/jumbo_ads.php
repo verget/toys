@@ -35,12 +35,12 @@
 							<p>В наличии:&nbsp;
 							<span class = "info"><?php echo $ads_item->in_stock?></span>
 							</p>
-						<span class="price"><?php 
+						<span class="price"><?php
 							setlocale(LC_MONETARY, 'ru_RU.utf8');
 							echo money_format('%.0i', $ads_item->price) . "\n"; ?>
 						</span>
 						<div class="row" style="padding: 5px;">
-								<a href="/add_to_cart/<?php echo $ads_item->id?>"class="btn btn-sm btn-primary">В корзину</a>
+								<button class="btn btn-sm btn-primary add_to_cart">В корзину</button>
 								<a href="/object/<?php echo $ads_item->id?>"class="btn btn-sm btn-primary">Подробнее</a>
 						</div>
 					</div>

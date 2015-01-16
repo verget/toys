@@ -30,11 +30,20 @@
 	<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="/img/ball.ico" type="image/x-icon">
 	
-	<link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
 	<link rel="stylesheet" href="/css/style.css">
 	
 	<script src="/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/js/script.js"></script>
+	<?php 
+	
+	if(!isset($_SESSION['CART_ID'])){
+	       session_start();
+	       $_SESSION['CART_ID'] = 1;
+	       $_SESSION['CART_LENGTH'] = 0;
+	}
+	
+	?>
 </head>
 <body>
   <!--Горизонтальное меню  --> 
@@ -64,7 +73,7 @@
 	    <ul class="nav navbar-nav navbar-right">
 	      <li>
 	      	<a href="/">
-			  Корзина <span class="badge">1</span>
+			  Корзина <span class="badge" id = "cart_count"><?php echo $_SESSION['CART_LENGTH']?></span>
 			</a>
 	      </li>
 	    </ul>

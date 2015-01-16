@@ -3845,3 +3845,122 @@ DEBUG - 2015-01-14 19:54:23 --> Controller Class Initialized
 DEBUG - 2015-01-14 19:54:23 --> Model Class Initialized
 DEBUG - 2015-01-14 19:54:23 --> Final output sent to browser
 DEBUG - 2015-01-14 19:54:23 --> Total execution time: 0.0049
+DEBUG - 2015-01-14 19:57:50 --> Config Class Initialized
+DEBUG - 2015-01-14 19:57:50 --> Hooks Class Initialized
+DEBUG - 2015-01-14 19:57:50 --> Utf8 Class Initialized
+DEBUG - 2015-01-14 19:57:50 --> UTF-8 Support Enabled
+DEBUG - 2015-01-14 19:57:50 --> URI Class Initialized
+DEBUG - 2015-01-14 19:57:50 --> Router Class Initialized
+DEBUG - 2015-01-14 19:57:50 --> Output Class Initialized
+DEBUG - 2015-01-14 19:57:50 --> Security Class Initialized
+DEBUG - 2015-01-14 19:57:50 --> Input Class Initialized
+DEBUG - 2015-01-14 19:57:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-01-14 19:57:50 --> Language Class Initialized
+DEBUG - 2015-01-14 19:57:50 --> Loader Class Initialized
+DEBUG - 2015-01-14 19:57:50 --> Helper loaded: url_helper
+DEBUG - 2015-01-14 19:57:50 --> Helper loaded: form_helper
+DEBUG - 2015-01-14 19:57:50 --> Database Driver Class Initialized
+ERROR - 2015-01-14 19:57:50 --> Severity: Warning  --> mysqli_connect(): Headers and client library minor version mismatch. Headers:50540 Library:50622 /home/verget/projects/toys/system/database/drivers/mysqli/mysqli_driver.php 76
+DEBUG - 2015-01-14 19:57:50 --> Pagination Class Initialized
+DEBUG - 2015-01-14 19:57:50 --> Controller Class Initialized
+DEBUG - 2015-01-14 19:57:50 --> Model Class Initialized
+DEBUG - 2015-01-14 19:57:50 --> File loaded: application/views/templates/header.php
+DEBUG - 2015-01-14 19:57:50 --> File loaded: application/views/pages/about.php
+DEBUG - 2015-01-14 19:57:50 --> File loaded: application/views/templates/footer.php
+DEBUG - 2015-01-14 19:57:50 --> Final output sent to browser
+DEBUG - 2015-01-14 19:57:50 --> Total execution time: 0.0161
+DEBUG - 2015-01-14 19:57:51 --> Config Class Initialized
+DEBUG - 2015-01-14 19:57:51 --> Hooks Class Initialized
+DEBUG - 2015-01-14 19:57:51 --> Utf8 Class Initialized
+DEBUG - 2015-01-14 19:57:51 --> UTF-8 Support Enabled
+DEBUG - 2015-01-14 19:57:51 --> URI Class Initialized
+DEBUG - 2015-01-14 19:57:51 --> Router Class Initialized
+DEBUG - 2015-01-14 19:57:51 --> Output Class Initialized
+DEBUG - 2015-01-14 19:57:51 --> Security Class Initialized
+DEBUG - 2015-01-14 19:57:51 --> Input Class Initialized
+DEBUG - 2015-01-14 19:57:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-01-14 19:57:51 --> Language Class Initialized
+DEBUG - 2015-01-14 19:57:51 --> Loader Class Initialized
+DEBUG - 2015-01-14 19:57:51 --> Helper loaded: url_helper
+DEBUG - 2015-01-14 19:57:51 --> Helper loaded: form_helper
+DEBUG - 2015-01-14 19:57:51 --> Database Driver Class Initialized
+ERROR - 2015-01-14 19:57:51 --> Severity: Warning  --> mysqli_connect(): Headers and client library minor version mismatch. Headers:50540 Library:50622 /home/verget/projects/toys/system/database/drivers/mysqli/mysqli_driver.php 76
+DEBUG - 2015-01-14 19:57:51 --> Pagination Class Initialized
+DEBUG - 2015-01-14 19:57:51 --> Controller Class Initialized
+DEBUG - 2015-01-14 19:57:51 --> Model Class Initialized
+DEBUG - 2015-01-14 19:57:51 --> File loaded: application/views/templates/header.php
+DEBUG - 2015-01-14 19:57:51 --> File loaded: application/views/pages/education.php
+DEBUG - 2015-01-14 19:57:51 --> File loaded: application/views/templates/footer.php
+DEBUG - 2015-01-14 19:57:51 --> Final output sent to browser
+DEBUG - 2015-01-14 19:57:51 --> Total execution time: 0.0075
+DEBUG - 2015-01-14 19:57:53 --> Config Class Initialized
+DEBUG - 2015-01-14 19:57:53 --> Hooks Class Initialized
+DEBUG - 2015-01-14 19:57:53 --> Utf8 Class Initialized
+DEBUG - 2015-01-14 19:57:53 --> UTF-8 Support Enabled
+DEBUG - 2015-01-14 19:57:53 --> URI Class Initialized
+DEBUG - 2015-01-14 19:57:53 --> Router Class Initialized
+DEBUG - 2015-01-14 19:57:53 --> Output Class Initialized
+DEBUG - 2015-01-14 19:57:53 --> Security Class Initialized
+DEBUG - 2015-01-14 19:57:53 --> Input Class Initialized
+DEBUG - 2015-01-14 19:57:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-01-14 19:57:53 --> Language Class Initialized
+DEBUG - 2015-01-14 19:57:53 --> Loader Class Initialized
+DEBUG - 2015-01-14 19:57:53 --> Helper loaded: url_helper
+DEBUG - 2015-01-14 19:57:53 --> Helper loaded: form_helper
+DEBUG - 2015-01-14 19:57:53 --> Database Driver Class Initialized
+ERROR - 2015-01-14 19:57:53 --> Severity: Warning  --> mysqli_connect(): Headers and client library minor version mismatch. Headers:50540 Library:50622 /home/verget/projects/toys/system/database/drivers/mysqli/mysqli_driver.php 76
+DEBUG - 2015-01-14 19:57:53 --> Pagination Class Initialized
+DEBUG - 2015-01-14 19:57:53 --> Controller Class Initialized
+DEBUG - 2015-01-14 19:57:53 --> Model Class Initialized
+DEBUG - 2015-01-14 19:57:53 --> File loaded: application/views/templates/header.php
+DEBUG - 2015-01-14 19:57:53 --> File loaded: application/views/pages/actions.php
+DEBUG - 2015-01-14 19:57:53 --> File loaded: application/views/templates/footer.php
+DEBUG - 2015-01-14 19:57:53 --> Final output sent to browser
+DEBUG - 2015-01-14 19:57:53 --> Total execution time: 0.0075
+DEBUG - 2015-01-14 19:57:54 --> Config Class Initialized
+DEBUG - 2015-01-14 19:57:54 --> Hooks Class Initialized
+DEBUG - 2015-01-14 19:57:54 --> Utf8 Class Initialized
+DEBUG - 2015-01-14 19:57:54 --> UTF-8 Support Enabled
+DEBUG - 2015-01-14 19:57:54 --> URI Class Initialized
+DEBUG - 2015-01-14 19:57:54 --> Router Class Initialized
+DEBUG - 2015-01-14 19:57:54 --> No URI present. Default controller set.
+DEBUG - 2015-01-14 19:57:54 --> Output Class Initialized
+DEBUG - 2015-01-14 19:57:54 --> Security Class Initialized
+DEBUG - 2015-01-14 19:57:54 --> Input Class Initialized
+DEBUG - 2015-01-14 19:57:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-01-14 19:57:54 --> Language Class Initialized
+DEBUG - 2015-01-14 19:57:54 --> Loader Class Initialized
+DEBUG - 2015-01-14 19:57:54 --> Helper loaded: url_helper
+DEBUG - 2015-01-14 19:57:54 --> Helper loaded: form_helper
+DEBUG - 2015-01-14 19:57:54 --> Database Driver Class Initialized
+ERROR - 2015-01-14 19:57:54 --> Severity: Warning  --> mysqli_connect(): Headers and client library minor version mismatch. Headers:50540 Library:50622 /home/verget/projects/toys/system/database/drivers/mysqli/mysqli_driver.php 76
+DEBUG - 2015-01-14 19:57:54 --> Pagination Class Initialized
+DEBUG - 2015-01-14 19:57:54 --> Controller Class Initialized
+DEBUG - 2015-01-14 19:57:54 --> Model Class Initialized
+DEBUG - 2015-01-14 19:57:54 --> File loaded: application/views/templates/header.php
+DEBUG - 2015-01-14 19:57:54 --> File loaded: application/views/ads/search_form_ads.php
+DEBUG - 2015-01-14 19:57:54 --> File loaded: application/views/ads/jumbo_ads.php
+DEBUG - 2015-01-14 19:57:54 --> File loaded: application/views/templates/footer.php
+DEBUG - 2015-01-14 19:57:54 --> Final output sent to browser
+DEBUG - 2015-01-14 19:57:54 --> Total execution time: 0.0120
+DEBUG - 2015-01-14 19:57:55 --> Config Class Initialized
+DEBUG - 2015-01-14 19:57:55 --> Hooks Class Initialized
+DEBUG - 2015-01-14 19:57:55 --> Utf8 Class Initialized
+DEBUG - 2015-01-14 19:57:55 --> UTF-8 Support Enabled
+DEBUG - 2015-01-14 19:57:55 --> URI Class Initialized
+DEBUG - 2015-01-14 19:57:55 --> Router Class Initialized
+DEBUG - 2015-01-14 19:57:55 --> Output Class Initialized
+DEBUG - 2015-01-14 19:57:55 --> Security Class Initialized
+DEBUG - 2015-01-14 19:57:55 --> Input Class Initialized
+DEBUG - 2015-01-14 19:57:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-01-14 19:57:55 --> Language Class Initialized
+DEBUG - 2015-01-14 19:57:55 --> Loader Class Initialized
+DEBUG - 2015-01-14 19:57:55 --> Helper loaded: url_helper
+DEBUG - 2015-01-14 19:57:55 --> Helper loaded: form_helper
+DEBUG - 2015-01-14 19:57:55 --> Database Driver Class Initialized
+ERROR - 2015-01-14 19:57:55 --> Severity: Warning  --> mysqli_connect(): Headers and client library minor version mismatch. Headers:50540 Library:50622 /home/verget/projects/toys/system/database/drivers/mysqli/mysqli_driver.php 76
+DEBUG - 2015-01-14 19:57:55 --> Pagination Class Initialized
+DEBUG - 2015-01-14 19:57:55 --> Controller Class Initialized
+DEBUG - 2015-01-14 19:57:55 --> Model Class Initialized
+DEBUG - 2015-01-14 19:57:55 --> Final output sent to browser
+DEBUG - 2015-01-14 19:57:55 --> Total execution time: 0.0061
