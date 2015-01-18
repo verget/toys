@@ -36,13 +36,7 @@
 	<script src="/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/js/script.js"></script>
 	<?php 
-	
-	if(!isset($_SESSION['CART_ID'])){
-	       session_start();
-	       $_SESSION['CART_ID'] = 1;
-	       $_SESSION['CART_LENGTH'] = 0;
-	}
-	
+		$cart_len = count($this->session->userdata('cart'));
 	?>
 </head>
 <body>
@@ -73,7 +67,7 @@
 	    <ul class="nav navbar-nav navbar-right">
 	      <li>
 	      	<a href="/">
-			  Корзина <span class="badge" id = "cart_count"><?php echo $_SESSION['CART_LENGTH']?></span>
+			  Корзина <span class="badge" id = "cart_count"><?php echo $cart_len?></span>
 			</a>
 	      </li>
 	    </ul>

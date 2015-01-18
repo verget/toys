@@ -8,6 +8,7 @@ class Ads extends Prototype {
         parent::__construct();
         $this->load->model( 'ads_model' );
         $this->load->model( 'news_model' );
+        $this->load->library('session');
         
         $this->_searchFields = [
                         'avail_category' => $this->ads_model->getAvailCategory(0, 'Любая' ),
@@ -37,6 +38,7 @@ class Ads extends Prototype {
         $this->load->model( 'config_model' );
         $this->load->model( 'banners_model' );
         $this->load->model( 'slides_model' );
+        $this->load->library('session');
 
         $config = array(
                         'base_url' => '/p/',
@@ -87,6 +89,7 @@ class Ads extends Prototype {
         $ads = $this->ads_model->fetch_one_ads( $ads_id );
         $this->load->model( 'banners_model' );
         $this->load->model( 'slides_model' );
+        $this->load->library('session');
         
         if(empty( $ads ))
             return $this->output->set_header( 'Location: /' . (! empty( $_GET ) ? '?' . http_build_query( $_GET ) : '') );
@@ -119,9 +122,11 @@ class Ads extends Prototype {
        }      
        echo json_encode($a);
     }
-    public function add_to_cart($item_id){
-        
+
+    public function to_cart($item_id){
+    	$cart = $this->session->userdata('cart');
+    	array_push($cart, $item_id);
+    	$this->session->set_userdata('cart', $cart);
+    	echo count($cart);
     }
 }
-
-                            

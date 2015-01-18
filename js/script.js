@@ -1,11 +1,13 @@
 
 $(function() {
-	
 	$('.add_to_cart').on('click', function() {
-		var count = $('#cart_count').text();
-		$('#cart_count').text(parseInt(count) + 1);
-		return false;
+		var item_id = $(this).attr('id');
+		$.getJSON('/to_cart/'+item_id,  function(data){
+			$('#cart_count').text(data);
+		});
+		return true;
 	});
+
 	
     $(".bootstrap_validate_form").validate({
         rules: {

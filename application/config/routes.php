@@ -57,7 +57,8 @@ $route['page/(:any)'] = 'pages/view/$1';
 $route['page'] = 'pages';
 
 $route['get_type/(:any)'] = 'ads/get_type/$1';
-$route['add_to_cart/(:any)'] = 'ads/add_to_cart/$1';
+
+$route['to_cart/(:any)'] = 'ads/to_cart/$1';
 
 // -------- ADMIN SECTION -----------
 $route['admin'] = 'admin/ads/index';

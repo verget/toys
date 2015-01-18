@@ -1,4 +1,8 @@
  <!--Джамбатрон-->
+ <?php 
+ 	$cart = array();
+ 	$this->session->set_userdata('cart', $cart);
+ ?>
 <?php if( !empty($ads) ):?>
 	<?php foreach ($ads as $ads_item):?>		
 	<div class="col-xs-4">
@@ -40,7 +44,7 @@
 							echo money_format('%.0i', $ads_item->price) . "\n"; ?>
 						</span>
 						<div class="row" style="padding: 5px;">
-								<button class="btn btn-sm btn-primary add_to_cart">В корзину</button>
+								<button class="btn btn-sm btn-primary add_to_cart" id = "<?php echo $ads_item->id?>">В корзину</button>
 								<a href="/object/<?php echo $ads_item->id?>"class="btn btn-sm btn-primary">Подробнее</a>
 						</div>
 					</div>
