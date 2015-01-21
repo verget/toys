@@ -8,7 +8,7 @@ class Ads extends Prototype {
         parent::__construct();
         $this->load->model( 'ads_model' );
         $this->load->model( 'news_model' );
-        $this->load->library('session');
+
         
         $this->_searchFields = [
                         'avail_category' => $this->ads_model->getAvailCategory(0, 'Любая' ),
@@ -20,8 +20,8 @@ class Ads extends Prototype {
     
     public function view($description = "index"){
         $data = [
-                        'ads_item' => $this->ads_model->get_ads( $description ),
-                        'search' => $this->_search 
+                    'ads_item' => $this->ads_model->get_ads( $description ),
+                    'search' => $this->_search 
         ];
         if(empty( $data['ads_item'] )){
             show_404();
@@ -38,7 +38,6 @@ class Ads extends Prototype {
         $this->load->model( 'config_model' );
         $this->load->model( 'banners_model' );
         $this->load->model( 'slides_model' );
-        $this->load->library('session');
 
         $config = array(
                         'base_url' => '/p/',
@@ -89,7 +88,6 @@ class Ads extends Prototype {
         $ads = $this->ads_model->fetch_one_ads( $ads_id );
         $this->load->model( 'banners_model' );
         $this->load->model( 'slides_model' );
-        $this->load->library('session');
         
         if(empty( $ads ))
             return $this->output->set_header( 'Location: /' . (! empty( $_GET ) ? '?' . http_build_query( $_GET ) : '') );
@@ -112,6 +110,7 @@ class Ads extends Prototype {
         ] );
         $this->load->view( 'templates/footer' );
     }
+    
     public function get_type($category_id){
        $array = $this->ads_model->getAvailTypes( 0, 'Любой', (int)$category_id );
        $a = array();
@@ -124,9 +123,45 @@ class Ads extends Prototype {
     }
 
     public function to_cart($item_id){
-    	$cart = $this->session->userdata('cart');
+        session_start();
+        if(!isset($_SESSION['cart']))
+            $_SESSION['cart'] = array();
+    	$cart = $_SESSION['cart'];
     	array_push($cart, $item_id);
-    	$this->session->set_userdata('cart', $cart);
+    	$_SESSION['cart'] = $cart;
     	echo count($cart);
+    }
+    
+    public function get_cart(){
+       session_start();
+       $cart = $_SESSION['cart'];
+       $items = $this->ads_model->getItems($cart);
+       $a = array();
+       $i = 1;
+       if(!empty($items)){
+           foreach ($items as $item){
+//                $k = 0;
+//                foreach($items as $key => $it){
+//                    if($item->id == $it->id){
+//                        $k++;
+//                        if($k > 1) unset($items[$key]);
+//                    }
+//                }
+//                $item->count = $k;
+               $a[$i] = $item;
+               $i++;
+           }
+       }      
+       echo json_encode($a);
+    }
+    
+    public function new_order(){
+        session_start();
+        $name = $_POST['name'];
+        $address = $_POST['address'];
+        $items = $_SESSION['cart'];
+        $num = $this->ads_model->setOrder($name, $address, $items);
+        unset($_SESSION['cart']);
+        echo $num;
     }
 }

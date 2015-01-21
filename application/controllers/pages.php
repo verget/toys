@@ -11,7 +11,7 @@ class Pages extends Prototype {
 		$this->load->model( 'config_model' );
 		$this->load->model( 'slides_model' );
 		$this->load->model( 'banners_model' );
-		$this->load->library('session');
+
 		$page = $this->pages_model->getPage($pageName);
 
 		$this->load->view( 'templates/header', [

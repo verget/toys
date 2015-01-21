@@ -251,6 +251,22 @@ class Ads_model extends CI_Model {
         return false;
     }
     
+    public function getItems($cart){
+        $array = array();
+        foreach($cart as $item){
+            $this->db->select( '*');
+            $this->db->from( 'items' );
+            $this->db->where('id', $item);
+            $query = $this->db->get();
+            if($query->num_rows() > 0){
+                foreach( $query->result() as $row ) {
+                    $array[] = $row;
+                }
+            }
+        }
+        return $array;
+    }
+    
     public function getAvailCountry($appId = false, $appName = false){
     	$this->db->select( 'items_countries.country_title, country_id');
     	$this->db->from( 'items' );
@@ -273,6 +289,28 @@ class Ads_model extends CI_Model {
     	}
     	return false;
     }
+    
+     public function setOrder($name, $address, $items) {
+         $this->db->insert( 'orders', [
+                         'client_name' => $name,
+                         'client_address' => $address,
+                         'items' => implode(",", $items),
+         ] );
+         return $this->db->insert_id();
+     }
+     
+     public function getOrders() {
+         $array = array();
+         $this->db->select( '*');
+         $this->db->from( 'orders' );
+         $query = $this->db->get();
+         if($query->num_rows() > 0){
+             foreach( $query->result() as $row ) {
+                 $array[] = $row;
+             }
+         }
+         return $array;
+     }
 
     
     public function getCategoryList($appId = false, $appName = false){

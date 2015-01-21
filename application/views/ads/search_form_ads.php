@@ -73,10 +73,10 @@
 					<div class="form-group">
 						<label class="col-xs-2 control-label">Цена:</label>
 						<div class="col-xs-4 col-md-offset-1">
-							<input name="search[price1]" type="text" value='<?php echo $search['price1']; ?>' class="form-control" placeholder="От">
+							<input name="search[price1]" type="text" value='<?php echo $search['price1']; ?>' class="form-control input-small" placeholder="От">
 						</div>
-						<div class="col-xs-4 col-md-offset-1">
-							<input name="search[price2]" type="text" value='<?php echo $search['price2']; ?>' class="form-control" placeholder="До">
+						<div class="col-xs-4">
+							<input name="search[price2]" type="text" value='<?php echo $search['price2']; ?>' class="form-control input-small" placeholder="До">
 						</div>
 					</div>
 					<div class="form-group"> 
@@ -118,7 +118,7 @@
 			        <?php echo $news_item->text?>
 			    </div>
 			    <p><a href="/news/<?php echo $news_item->id?>" title="Подробнее" 
-			        class="pull-right" style="padding:0px 0px">Подробнее >></a></p>
+			        class="pull-right" style="padding:0px 0px">Подробнее</a></p>
 			<?php endforeach ?>
 			<?php endif;?>
 		</div>

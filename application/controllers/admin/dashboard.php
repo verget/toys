@@ -9,18 +9,20 @@ class Dashboard extends User {
         $this->load->view( 'admin/dashboard/footer' );
     }
     
-    public function ipoteka($params = ''){
+    public function orders($params = ''){
         $this->checkAccess('god');
-        $this->load->model( 'pages_model' );
+        $this->load->model( 'pages_model');
+        $this->load->model( 'ads_model');
         if($params == 'save'){
             $page = $this->input->post( 'page' );
-            $this->pages_model->updatePage( 'ipoteka', $page );
-            return $this->output->set_header( 'Location: /admin/ipoteka' );
+            $this->pages_model->updatePage( 'orders', $page );
+            return $this->output->set_header( 'Location: /admin/orders' );
         }
         
         $this->load->view( 'admin/dashboard/header');
-        $this->load->view( 'admin/dashboard/ipoteka', [
-            'page' => $this->pages_model->getPage( 'ipoteka' )
+        $this->load->view( 'admin/dashboard/orders', [
+            'page' => $this->pages_model->getPage( 'orders' ),
+            'orders' => $this->ads_model->getOrders(),
         ] );
         $this->load->view( 'admin/dashboard/footer' );
     }

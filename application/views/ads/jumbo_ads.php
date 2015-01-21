@@ -1,12 +1,8 @@
  <!--Джамбатрон-->
- <?php 
- 	$cart = array();
- 	$this->session->set_userdata('cart', $cart);
- ?>
 <?php if( !empty($ads) ):?>
 	<?php foreach ($ads as $ads_item):?>		
 	<div class="col-xs-4">
-     	<div class="each_house">
+     	<div class="each_house draggable">
 			<div class="row">
 				<div class="col-xs-5">
 					<?php  if($ads_item->image_url):?>

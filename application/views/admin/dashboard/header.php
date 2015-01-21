@@ -37,6 +37,9 @@
                 <?php if( $this->perm_flags['items_show'] ) : ?>
 				<li><a href="/admin/">Каталог</a></li>
 				<?php endif; ?>		
+				<?php if( $this->perm_flags['items_show'] ) : ?>
+				<li><a href="/admin/orders">Заказы</a></li>
+				<?php endif; ?>	
                 <?php if( $this->perm_flags['god'] ) : ?>
 				<li><a href="/admin/banners">Редактор баннеров спецпредложений</a></li>
 				<?php endif; ?>

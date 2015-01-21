@@ -59,6 +59,8 @@ $route['page'] = 'pages';
 $route['get_type/(:any)'] = 'ads/get_type/$1';
 
 $route['to_cart/(:any)'] = 'ads/to_cart/$1';
+$route['get_cart'] = 'ads/get_cart';
+$route['new_order'] = 'ads/new_order';
 
 // -------- ADMIN SECTION -----------
 $route['admin'] = 'admin/ads/index';
@@ -96,6 +98,8 @@ $route['admin/services/save'] = 'admin/dashboard/services/save';
 $route['admin/actions'] = 'admin/dashboard/actions';
 $route['admin/actions/save'] = 'admin/dashboard/actions/save';
 
+$route['admin/orders'] = 'admin/dashboard/orders';
+$route['admin/orders/save'] = 'admin/dashboard/orders/save';
 
 $route['admin/education'] = 'admin/dashboard/education';
 $route['admin/education/save'] = 'admin/dashboard/education/save';

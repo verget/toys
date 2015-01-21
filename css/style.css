@@ -26,6 +26,25 @@
     padding: 2px;
     width: 300px;
 }
+/* Корзина */ 
+.modal-body {
+	overflow: auto;
+	max-height: 400px;
+}
+.cart_items{
+	margin: 5px;
+}
+
+
+.cart_list .price {
+	
+	text-align: center;
+	width: 50px;
+}
+.cart_list .title {
+	font-size: 14px;
+    width: 450px;
+}
 /* Баннера */ 
 .banner_img{
 	max-width: 380px ;
@@ -36,29 +55,22 @@
     bottom: 0;
     opacity: 0.5;
 }
-
 .gray_form input, select{
 	max-width: 180px;
 	padding-bottom: 5px;
 }
-
 form label.error {color: #FF0000; font-weight: normal;}
 
 .control-label {
 	text-align: left !important;
 	padding-right: 0px;
 }
-
 .news_conteiner {
-
     height: 150px;
     width: 450px;
 }
-
 /* Табличный вид */
-.tableview td{
-     background-color: #eeeeee;
-}
+
 .tableview {
 	padding-top: 15px;
 }
@@ -67,13 +79,11 @@ form label.error {color: #FF0000; font-weight: normal;}
      padding: 5px;
      border-radius: 4px 4px 4px 4px;
 }
-
 .tableview  th{
      border: 1px solid darkgray;
      padding: 5px;
      border-radius: 4px 4px 4px 4px;
 }
-
 th {
 	 text-align: center;
 }
@@ -87,17 +97,14 @@ th {
     height: 288px !important;
     padding: 0;
 }
-
 .slide_img {
 	width: 735;
     height: 288 !important;
     border-radius: 15px;
 }
-
 .carousel-inner > .item > img, .carousel-inner > .item > a > img{
 	height: 168px;
 }
-
 .carousel-indicators {
 	margin-bottom: 0px;
 }
@@ -132,16 +139,13 @@ th {
 	height: 40%;
 	width: 50%;
 }
-
 .legend_font {
     font-size: 15px;
     color: gray;
     text-align: center;
     padding-bottom: 5px;
 }
-
 .gray_form {
-	background: #eeeeee;
 	border: 1px solid #ddd;
     border-width: 1px;
     border-radius: 15px;
@@ -158,32 +162,31 @@ iframe {
     height: 350px;
     border: 0;
 }
-
 .each_house {
     border: 1px solid #ddd;
     border-width: 1px;
     border-radius: 15px;
-    background-color: #eeeeee;
     line-height: 1.1;
     padding: 5px;
     max-width: 325px;
     height: 240px;
 }
+
+.draggable {
+	z-index: 10;
+}
 .info {
 	position: absolute;
 	font-weight: bold;
 }
-
 .params td {
 	max-width: 85px;
     overflow: hidden;
 }
-
 .this_house {
     border: 1px solid #ddd;
     border-width: 1px;
     border-radius: 15px;
-    background-color: #eeeeee;
     line-height: 1.4;
     padding: 5px;
     max-width: 600px;
@@ -205,6 +208,7 @@ iframe {
 .item_img {
 	 max-height: 250px;
      max-width: 140px;
+     padding: 5px;
 }
 
 .item_title {
@@ -213,7 +217,7 @@ iframe {
 }
 
 .description {
-    height: 80px;
+    height: 45px;
     overflow: hidden;
 }
 
@@ -222,15 +226,6 @@ table {
     text-align: left;
 }
 
-.house_price {
-    background-color: #EBEAEA;
-    color: black;
-    text-align: center;
-    border: 1px solid black;
-    border-width: 1px;
-    font-size: 13px;
-    padding: 0.11em 0.3em 0.3em 0.3em;
-}
 
 .price {
 	font-size: 15px;
