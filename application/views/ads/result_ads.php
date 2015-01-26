@@ -67,7 +67,7 @@ else
             <p>
                 <strong>В наличии: </strong><?php echo $ads_item->in_stock?> </p>
 			<div class="row" style="padding: 5px;">
-				<a href="/object/<?php echo $ads_item->id?>"class="btn btn-primary">В корзину</a>
+				<button class="btn btn-primary add_to_cart" id = "<?php echo $ads_item->id?>">В корзину</button>
 				<a href="javascript:history.back()" title="Вернуться на предыдущую страницу" class="btn btn-primary">Вернуться </a>
 			</div>
 		</div>

@@ -60,7 +60,7 @@
 	      <li class="active"><a href="/">Каталог</a></li>
 	      <li><a href="/page/services">Доставка</a></li>
 	      <li><a href="/page/actions">Акции</a></li>
-	      <li><a href="/page/education">Вакансии</a></li>
+<!-- 	      <li><a href="/page/education">Вакансии</a></li> -->
 	      <li><a href="/page/about">О компании</a></li>
 	      <li><a href="/page/contact">Контакты</a></li>
 	    </ul>
