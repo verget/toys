@@ -91,11 +91,11 @@
 					</div>
 					<div class="form-group pull-right">
 						<input  value='Подобрать' type="submit" class="btn btn-primary">
-						<div class="btn-group table-view-btn" data-toggle="buttons">  
-							<label class="btn table-btn <?php echo (isset($_GET['tableview'])?'active':'')?>"><img src="/img/table1.png" title="Табличный вид" class="table_img"/> 
-								<input type="checkbox" name="tableview" <?php echo (isset($_GET['tableview'])?'checked':'')?> alt ="Табличный вид" title="Табличный вид"/>
-  							</label>  
-  						</div>  
+<!-- 						<div class="btn-group table-view-btn" data-toggle="buttons">   
+							<label class="btn table-btn <?php// echo (isset($_GET['tableview'])?'active':'')?>"><img src="/img/table1.png" title="Табличный вид" class="table_img"/> 
+								<input type="checkbox" name="tableview" <?php// echo (isset($_GET['tableview'])?'checked':'')?> alt ="Табличный вид" title="Табличный вид"/>
+<!--   							</label>   -->
+<!--   						</div>   -->
 					</div>
 				</div>
 		</fieldset>
